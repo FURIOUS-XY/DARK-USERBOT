@@ -6,10 +6,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $MAFIA_REPO == "dark-userbot" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0hhcnNoLTc4L0RhcmtfdXNlcmJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2RvbjE5MDAvU2t5SGF3a3VzZXJib3QvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $MAFIA_REPO == "DARK-USERBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0hhcnNoLTc4L0RhcmtfdXNlcmJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2RvbjE5MDAvU2t5SGF3a3VzZXJib3QvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $MAFIA_REPO =~ $regex ]]
     then
         if [[ $MAFIA_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _get_repolink () {
             echo "${MAFIA_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0hhcnNoLTc4L0RhcmtfdXNlcmJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2RvbjE5MDAvU2t5SGF3a3VzZXJib3QvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     fi
 }
 
